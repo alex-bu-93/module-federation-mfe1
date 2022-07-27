@@ -2,11 +2,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
-  selector: 'app-root',
-  template: `
-    <p>app-root-mfe1</p>
-    <router-outlet></router-outlet>
-  `
+  selector: 'app-lazy',
+  template: `<p>app-lazy-mfe1</p>`
 })
-export class AppComponent {
+export class LazyComponent {
 }
