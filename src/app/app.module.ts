@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     RouterModule.forRoot([
       {path: 'lazy', loadChildren: () => import('./lazy').then(m => m.LazyModule)},
+      {path: 'lazy-second', loadChildren: () => import('./lazy-second').then(m => m.LazySecondModule)}
     ])
   ],
   declarations: [AppComponent],

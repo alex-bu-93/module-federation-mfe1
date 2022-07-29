@@ -5,7 +5,8 @@ module.exports = withModuleFederationPlugin({
   name: 'mfe1',
 
   exposes: {
-    './Module': './src/app/lazy/lazy.module.ts',
+    './lazyModule': './src/app/lazy/lazy.module.ts',
+    './lazySecondModule': './src/app/lazy-second/lazy-second.module.ts',
   },
 
   shared: {
